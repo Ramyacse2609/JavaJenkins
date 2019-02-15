@@ -1,0 +1,47 @@
+package org.calculator.com;
+
+import junit.framework.TestCase;
+
+public class UnitTestcase extends TestCase {
+
+	protected void setUp() throws Exception {
+		super.setUp();
+	}
+	Calculator obj1=new Calculator();
+	public void testAdddition1()
+	{
+		
+		int expected=7;
+		int actual=obj1.add(3, 4);
+		assertEquals("adding 3 and 4",expected,actual);
+		
+	}
+	public void testAdddition2()
+	{
+		
+		int expected=10;
+		int actual=obj1.add(5, 5);
+		assertEquals("adding 5 and 5",expected,actual);
+		
+	}
+	public void testSubtraction()
+	{
+		int expected=1;
+		int actual=obj1.sub(4,3);
+		assertEquals("Sutracting 4 and 3",expected,actual);
+	}
+	public void testSubtraction2()
+	{
+		int expected=2;
+		int actual=obj1.sub(5,3);
+		assertEquals("Sutracting 5 and 3",expected,actual);
+	
+}
+	public void testSubtraction3()
+	{
+		int expected=2;
+		int actual=obj1.sub(5,3);
+		assertEquals("Sutracting 5 and 3",expected,actual);
+	
+}
+}
